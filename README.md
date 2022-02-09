@@ -1,1 +1,7 @@
 # site-copy_2
+
+## Project 準備
+
+1. Ruby と Sass をインストール
+   - 参照: https://ferret-plus.com/12503?page=2
+2. Visual Studio Code で `Easy Sass` をインストール
