@@ -1,6 +1,7 @@
 body {
   margin: 0px;
 }
+
 .popup {
   background-color: black;
   width: 64vw;
@@ -10,14 +11,17 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .close-btn {
   position: absolute;
   top: -30px;
   right: 0px;
-  .fa-solid {
-    color: white;
-  }
 }
+
+.close-btn .fa-solid {
+  color: white;
+}
+
 .iframe-1 {
   width: 64vw;
   height: 34vw;
@@ -26,6 +30,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .black-background {
   background: rgba(0, 0, 0, 0.9);
   width: 100%;
