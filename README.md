@@ -1,5 +1,8 @@
 # site-copy_2
 
+## コピー元
+http://aigananda.com/
+
 ## Project 準備
 
 1. Ruby と Sass をインストール
