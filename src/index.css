@@ -25,14 +25,20 @@ body {
 .iframe-1 {
   width: 64vw;
   height: 34vw;
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
-.black-background {
-  background: rgba(0, 0, 0, 0.8);
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#content {
+  z-index: 2;
+  width: 50%;
+  padding: 1em;
+  background: #fff;
 }

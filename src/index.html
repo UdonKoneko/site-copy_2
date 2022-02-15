@@ -1,39 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <title>映画『愛が何だ』</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <script
       src="https://kit.fontawesome.com/4f8e5954ee.js"
       crossorigin="anonymous"
     ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     <link href="./index.min.css" rel="stylesheet" />
   </head>
+  <style></style>
   <body>
-    <main>
-      <header>
-        <a href="">ニュース</a>
-        <a href="">上映劇場</a>
-        <a href="">予告編</a>
-        <a href="">イントロ&ストーリー</a>
-        <a href="">キャスト</a>
-        <a href="">原作・監督<br />主題歌</a>
-      </header>
-      <div id="js-popup" class="popup">
-        <div id="js-close-btn" class="close-btn">
-          <i class="fa-solid fa-xmark fa-fw fa-2x"></i>
-        </div>
-        <iframe
-          class="iframe-1"
-          src="https://www.youtube.com/embed/AYM45i2drCU"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
-      <div id="js-black-bg" class="black-background"></div>
-    </main>
+    <header>
+      <a href="">ニュース</a>
+      <a href="">上映劇場</a>
+      <a href="">予告編</a>
+      <a href="">イントロ&ストーリー</a>
+      <a href="">キャスト</a>
+      <a href="">原作・監督<br />主題歌</a>
+    </header>
+    <div id="root"></div>
+    <script type="text/babel">
+      function Modal({ show, setShow }) {
+        const closeModal = () => {
+          setShow(false);
+        };
+        if (show) {
+          return (
+            <div id="overlay" onClick={closeModal}>
+              <div id="js-popup" class="popup">
+                <div id="js-close-btn" class="close-btn" onClick={closeModal}>
+                  <i class="fa-solid fa-xmark fa-fw fa-2x"></i>
+                </div>
+                <iframe
+                  class="iframe-1"
+                  src="https://www.youtube.com/embed/AYM45i2drCU"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          );
+        } else {
+          return null;
+        }
+      }
+      const { useState } = React;
+      function App() {
+        const [show, setShow] = useState(true);
+        const openModal = () => {
+          setShow(true);
+        };
+        return (
+          <div>
+            <Modal show={show} setShow={setShow} />
+          </div>
+        );
+      }
+      ReactDOM.render(<App />, document.getElementById("root"));
+    </script>
   </body>
 </html>
