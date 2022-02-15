@@ -4,8 +4,8 @@ body {
 
 .popup {
   background-color: black;
-  width: 64vw;
-  height: 40vw;
+  width: 980px;
+  height: 630px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -23,8 +23,8 @@ body {
 }
 
 .iframe-1 {
-  width: 64vw;
-  height: 34vw;
+  width: 980px;
+  height: 582px;
 }
 
 #overlay {
