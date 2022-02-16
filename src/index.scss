@@ -65,19 +65,33 @@ main {
 }
 #main-contents {
   display: flex;
-  #top-left-pr {
-    li {
-      list-style: none;
-      display: inline-block;
-      vertical-align: top;
-      #img_bnr {
-        &-towor {
-          width: 92px;
-          height: 24px;
+  #top-left-contents {
+    #wrap_li {
+      display: flex;
+      align-items: flex-start;
+      margin-top: 10px;
+      #li_towor {
+        border: solid 1px #ddd1b7;
+        font-size: 12px;
+        max-width: 248px;
+        margin-right: 10px;
+        p {
+          line-height: 1.3em;
+          margin: 5px;
         }
-        &-filmarks {
-          width: 212px;
-          height: 86px;
+      }
+      li {
+        list-style: none;
+        #img_bnr {
+          &-towor {
+            width: 92px;
+            height: 24px;
+            padding: 5px 70px 0 70px;
+          }
+          &-filmarks {
+            width: 212px;
+            height: 86px;
+          }
         }
       }
     }
@@ -85,30 +99,47 @@ main {
       width: 400px;
       height: 29px;
     }
-    #wrap_img {
-      img:nth-child(1) {
-        width: 600px;
-        height: 269px;
+    h1 {
+      margin-bottom: 0;
+      #img {
+        &_logo {
+          width: 600px;
+          height: 269px;
+        }
       }
-      img:nth-child(2) {
+    }
+    #img {
+      &_koukai2 {
         width: 400;
         height: 34px;
       }
-      img:nth-child(3) {
+      &_bnr_bddvd {
         width: 470;
         height: 82px;
       }
-      img:nth-child(4) {
+      &_home_thumbs {
         width: 470;
         height: 104px;
       }
     }
-    #img-main2 {
-      img {
-        width: 565px;
-        height: 780px;
+    #wrap_img-banners {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 470px;
+      margin: 0;
+      &_content {
+        margin-top: 10px;
       }
     }
+  }
+  #img_main2 {
+    width: 565px;
+    height: 780px;
+    z-index: -1;
+    position: absolute;
+    right: 50%;
+    left: 50%;
   }
 }
 

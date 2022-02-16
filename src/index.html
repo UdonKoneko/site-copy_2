@@ -64,52 +64,63 @@
       ReactDOM.render(<App />, document.getElementById("modal-main"));
     </script>
     <main>
-      <section id="header">
-        <ul class="ul-header">
-          <li><a href="">ニュース</a></li>
-          <li><a href="">上映劇場</a></li>
-          <li><a href="">予告編</a></li>
-          <li>
-            <a href="">
-              <p>イントロ&<br />ストーリー</p></a
-            >
-          </li>
-          <li><a href="">キャスト</a></li>
-          <li>
-            <a href="">
-              <p>原作・監督<br />主題歌</p></a
-            >
-          </li>
-        </ul>
-      </section>
       <section id="main-contents">
-        <div id="top-left-pr">
+        <div id="top-left-contents">
+          <ul class="ul-header">
+            <li><a href="">ニュース</a></li>
+            <li><a href="">上映劇場</a></li>
+            <li><a href="">予告編</a></li>
+            <li>
+              <a href="">
+                <p>イントロ&<br />ストーリー</p></a
+              >
+            </li>
+            <li><a href="">キャスト</a></li>
+            <li>
+              <a href="">
+                <p>原作・監督<br />主題歌</p></a
+              >
+            </li>
+          </ul>
           <div id="sns-icon">
             <a href="">Facebook</a>
             <a href="">Twitter</a>
             <a href="">Instagram</a>
           </div>
-          <div id="wrap_img">
-            <img src="../img/logo.png" />
-            <img src="../img/koukai2.png" />
-            <img src="../img/bnr_bddvd.png" />
-            <img src="../img/home_thumbs.png" />
+          <div id="wrap_img-banners">
+            <h1><img id="img_logo" src="../img/logo.png" /></h1>
+            <div id="wrap_img-banners_content">
+              <img id="img_koukai2" src="../img/koukai2.png" />
+            </div>
+            <div id="wrap_img-banners_content">
+              <img id="img_bnr_bddvd" src="../img/bnr_bddvd.png" />
+            </div>
+            <div id="wrap_img-banners_content">
+              <img id="img_home_thumbs" src="../img/home_thumbs.png" />
+            </div>
+            <div id="wrap_li">
+              <li id="li_towor">
+                <img id="img_bnr-towor" src="../img/bnr_tower.jpeg" />
+                <p class="img_bnr-towor_bold">
+                  <span class="p_bold">サウンドトラックCD発売中！</span>
+                  <br />
+                  全国のタワーレコード、タワーオンラインにてご購入で、先着でオリジナルポストカードをプレゼント！
+                </p>
+                <p class="p_small color1">
+                  ※特典満了次第終了とさせていただきます。
+                </p>
+              </li>
+              <li>
+                <img id="img_bnr-filmarks" src="../img/bnr_filmarks.jpeg" />
+              </li>
+            </div>
+            <div id="wrap_img-banners_content">
+              <img id="img_baliafree" src="../img/baliafree.png" />
+            </div>
           </div>
-          <li>
-            <img id="img_bnr-towor" src="../img/bnr_tower.jpeg" />
-            <p class="p_bold">サウンドトラックCD発売中！</p>
-            <p>
-              全国のタワーレコード、タワーオンラインにてご購入で、先着でオリジナルポストカードをプレゼント！
-            </p>
-            <p class="p_small color1">
-              ※特典満了次第終了とさせていただきます。
-            </p>
-          </li>
-          <li><img id="img_bnr-filmarks" src="../img/bnr_filmarks.jpeg" /></li>
-          <img id="img_baliafree" src="../img/baliafree.png" />
         </div>
-        <div id="img-main2">
-          <img src="../img/main2.jpeg" />
+        <div>
+          <img id="img_main2" src="../img/main2.jpeg" />
         </div>
       </section>
     </main>

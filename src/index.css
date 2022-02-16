@@ -80,50 +80,87 @@ main {
   display: flex;
 }
 
-#main-contents #top-left-pr li {
-  list-style: none;
-  display: inline-block;
-  vertical-align: top;
+#main-contents #top-left-contents #wrap_li {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 10px;
 }
 
-#main-contents #top-left-pr li #img_bnr-towor {
+#main-contents #top-left-contents #wrap_li #li_towor {
+  border: solid 1px #ddd1b7;
+  font-size: 12px;
+  max-width: 248px;
+  margin-right: 10px;
+}
+
+#main-contents #top-left-contents #wrap_li #li_towor p {
+  line-height: 1.3em;
+  margin: 5px;
+}
+
+#main-contents #top-left-contents #wrap_li li {
+  list-style: none;
+}
+
+#main-contents #top-left-contents #wrap_li li #img_bnr-towor {
   width: 92px;
   height: 24px;
+  padding: 5px 70px 0 70px;
 }
 
-#main-contents #top-left-pr li #img_bnr-filmarks {
+#main-contents #top-left-contents #wrap_li li #img_bnr-filmarks {
   width: 212px;
   height: 86px;
 }
 
-#main-contents #top-left-pr #img_baliafree {
+#main-contents #top-left-contents #img_baliafree {
   width: 400px;
   height: 29px;
 }
 
-#main-contents #top-left-pr #wrap_img img:nth-child(1) {
+#main-contents #top-left-contents h1 {
+  margin-bottom: 0;
+}
+
+#main-contents #top-left-contents h1 #img_logo {
   width: 600px;
   height: 269px;
 }
 
-#main-contents #top-left-pr #wrap_img img:nth-child(2) {
+#main-contents #top-left-contents #img_koukai2 {
   width: 400;
   height: 34px;
 }
 
-#main-contents #top-left-pr #wrap_img img:nth-child(3) {
+#main-contents #top-left-contents #img_bnr_bddvd {
   width: 470;
   height: 82px;
 }
 
-#main-contents #top-left-pr #wrap_img img:nth-child(4) {
+#main-contents #top-left-contents #img_home_thumbs {
   width: 470;
   height: 104px;
 }
 
-#main-contents #top-left-pr #img-main2 img {
+#main-contents #top-left-contents #wrap_img-banners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 470px;
+  margin: 0;
+}
+
+#main-contents #top-left-contents #wrap_img-banners_content {
+  margin-top: 10px;
+}
+
+#main-contents #img_main2 {
   width: 565px;
   height: 780px;
+  z-index: -1;
+  position: absolute;
+  right: 50%;
+  left: 50%;
 }
 
 .p_bold {
