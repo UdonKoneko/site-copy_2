@@ -65,7 +65,56 @@ main {
 }
 #main-contents {
   display: flex;
+  #top-left-pr {
+    li {
+      list-style: none;
+      display: inline-block;
+      vertical-align: top;
+      #img_bnr {
+        &-towor {
+          width: 92px;
+          height: 24px;
+        }
+        &-filmarks {
+          width: 212px;
+          height: 86px;
+        }
+      }
+    }
+    #img_baliafree {
+      width: 400px;
+      height: 29px;
+    }
+    #wrap_img {
+      img:nth-child(1) {
+        width: 600px;
+        height: 269px;
+      }
+      img:nth-child(2) {
+        width: 400;
+        height: 34px;
+      }
+      img:nth-child(3) {
+        width: 470;
+        height: 104px;
+      }
+    }
+    #img-main2 {
+      img {
+        width: 565px;
+        height: 780px;
+      }
+    }
+  }
 }
-.p-towor-bold {
+
+// 共通スタイル
+.p_bold {
   font-weight: bold;
+}
+.p_small {
+  font-size: small;
+}
+.color1 {
+  color: gray;
 }
