@@ -21,7 +21,7 @@
   </head>
   <style></style>
   <body>
-    <div id="root"></div>
+    <section id="modal-main"></section>
     <script type="text/babel">
       function Modal({ show, setShow }) {
         const closeModal = () => {
@@ -61,7 +61,7 @@
           </div>
         );
       }
-      ReactDOM.render(<App />, document.getElementById("root"));
+      ReactDOM.render(<App />, document.getElementById("modal-main"));
     </script>
     <main>
       <section id="header">
