@@ -21,14 +21,6 @@
   </head>
   <style></style>
   <body>
-    <header>
-      <a href="">ニュース</a>
-      <a href="">上映劇場</a>
-      <a href="">予告編</a>
-      <a href="">イントロ&ストーリー</a>
-      <a href="">キャスト</a>
-      <a href="">原作・監督<br />主題歌</a>
-    </header>
     <div id="root"></div>
     <script type="text/babel">
       function Modal({ show, setShow }) {
@@ -71,5 +63,50 @@
       }
       ReactDOM.render(<App />, document.getElementById("root"));
     </script>
+    <main>
+      <section id="header">
+        <ul class="ul-header">
+          <li><a href="">ニュース</a></li>
+          <li><a href="">上映劇場</a></li>
+          <li><a href="">予告編</a></li>
+          <li>
+            <a href="">
+              <p>イントロ&<br />ストーリー</p></a
+            >
+          </li>
+          <li><a href="">キャスト</a></li>
+          <li>
+            <a href="">
+              <p>原作・監督<br />主題歌</p></a
+            >
+          </li>
+        </ul>
+      </section>
+      <section id="main-contents">
+        <div id="top-left-pr">
+          <div id="sns-icon">
+            <a href="">Facebook</a>
+            <a href="">Twitter</a>
+            <a href="">Instagram</a>
+          </div>
+          <img src="../img/logo.png" />
+          <img src="../img/koukai2.png" />
+          <img src="../img/bnr_bddvd.png" />
+          <img src="../img/home_thumbs.png" />
+          <li>
+            <img src="../img/bnr_tower.jpeg" />
+            <p class="p-towor-bold">サウンドトラックCD発売中！</p>
+            <p>
+              全国のタワーレコード、タワーオンラインにてご購入で、先着でオリジナルポストカードをプレゼント！
+            </p>
+          </li>
+          <li><img src="../img/bnr_filmarks.jpeg" /></li>
+          <img src="../img/baliafree.png" />
+        </div>
+        <div id="img-main2">
+          <img src="../img/main2.jpeg" />
+        </div>
+      </section>
+    </main>
   </body>
 </html>

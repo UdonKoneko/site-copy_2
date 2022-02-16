@@ -48,3 +48,38 @@ body {
   padding: 1em;
   background: #fff;
 }
+
+main {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.ul-header {
+  max-width: 490px;
+  cursor: pointer;
+}
+
+.ul-header li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.ul-header a {
+  text-decoration: none;
+  color: #333333;
+  font-family: "Century";
+  background: url(../img/gnav1_2.png) no-repeat left top;
+}
+
+.ul-header a p {
+  margin: 0;
+  text-align: center;
+}
+
+#main-contents {
+  display: flex;
+}
+
+.p-towor-bold {
+  font-weight: bold;
+}
