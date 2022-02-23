@@ -64,65 +64,78 @@
       ReactDOM.render(<App />, document.getElementById("modal-main"));
     </script>
     <main>
-      <section id="main-contents">
-        <div id="top-left-contents">
-          <ul id="ul-header">
-            <li><a href="">ニュース</a></li>
-            <li><a href="">上映劇場</a></li>
-            <li><a href="">予告編</a></li>
-            <li>
-              <a href=""> イントロ&ストーリー</a>
-            </li>
-            <li><a href="">キャスト</a></li>
-            <li>
-              <a href=""> 原作・監督 主題歌</a>
-            </li>
-          </ul>
-          <div id="wrap_sns-icons">
-            <ul id="sns-icons">
+      <div id="main_inner">
+        <section id="main-contents">
+          <div id="top-left-contents">
+            <ul id="ul-header">
+              <li><a href="">ニュース</a></li>
+              <li><a href="">上映劇場</a></li>
+              <li><a href="">予告編</a></li>
               <li>
-                <a href="">Facebook</a>
+                <a href=""> イントロ&ストーリー</a>
               </li>
-              <li><a href="">Twitter</a></li>
-              <li><a href="">Instagram</a></li>
+              <li><a href="">キャスト</a></li>
+              <li>
+                <a href=""> 原作・監督 主題歌</a>
+              </li>
             </ul>
+            <div id="wrap_sns-icons">
+              <ul id="sns-icons">
+                <li>
+                  <a href="">Facebook</a>
+                </li>
+                <li><a href="">Twitter</a></li>
+                <li><a href="">Instagram</a></li>
+              </ul>
+            </div>
+            <h1><img id="img_logo" src="../img/logo.png" /></h1>
+            <div id="wrap_img-banners">
+              <div id="wrap_img-banners_content">
+                <img id="img_koukai2" src="../img/koukai2.png" />
+              </div>
+              <div id="wrap_img-banners_content">
+                <img id="img_bnr_bddvd" src="../img/bnr_bddvd.png" />
+              </div>
+              <div id="wrap_img-banners_content">
+                <img id="img_home_thumbs" src="../img/home_thumbs.png" />
+              </div>
+              <div id="wrap_li">
+                <li id="li_towor">
+                  <img id="img_bnr-towor" src="../img/bnr_tower.jpeg" />
+                  <p class="img_bnr-towor_bold">
+                    <span class="p_bold">サウンドトラックCD発売中！</span>
+                    <br />
+                    全国のタワーレコード、タワーオンラインにてご購入で、先着でオリジナルポストカードをプレゼント！
+                  </p>
+                  <p class="p_small color1">
+                    ※特典満了次第終了とさせていただきます。
+                  </p>
+                </li>
+                <li>
+                  <img id="img_bnr-filmarks" src="../img/bnr_filmarks.jpeg" />
+                </li>
+              </div>
+              <div id="wrap_img-banners_content">
+                <img id="img_baliafree" src="../img/baliafree.png" />
+              </div>
+            </div>
           </div>
-          <h1><img id="img_logo" src="../img/logo.png" /></h1>
-          <div id="wrap_img-banners">
-            <div id="wrap_img-banners_content">
-              <img id="img_koukai2" src="../img/koukai2.png" />
-            </div>
-            <div id="wrap_img-banners_content">
-              <img id="img_bnr_bddvd" src="../img/bnr_bddvd.png" />
-            </div>
-            <div id="wrap_img-banners_content">
-              <img id="img_home_thumbs" src="../img/home_thumbs.png" />
-            </div>
-            <div id="wrap_li">
-              <li id="li_towor">
-                <img id="img_bnr-towor" src="../img/bnr_tower.jpeg" />
-                <p class="img_bnr-towor_bold">
-                  <span class="p_bold">サウンドトラックCD発売中！</span>
-                  <br />
-                  全国のタワーレコード、タワーオンラインにてご購入で、先着でオリジナルポストカードをプレゼント！
-                </p>
-                <p class="p_small color1">
-                  ※特典満了次第終了とさせていただきます。
-                </p>
-              </li>
-              <li>
-                <img id="img_bnr-filmarks" src="../img/bnr_filmarks.jpeg" />
-              </li>
-            </div>
-            <div id="wrap_img-banners_content">
-              <img id="img_baliafree" src="../img/baliafree.png" />
-            </div>
+          <div>
+            <img id="img_main2" src="../img/main2.jpeg" />
           </div>
-        </div>
-        <div>
-          <img id="img_main2" src="../img/main2.jpeg" />
-        </div>
-      </section>
+        </section>
+        <section id="introstory">
+          <h2><img src="../img/title_introstory.png" /></h2>
+          <div id="introstory_inner">
+            <img src="../img/intro_catch1.png" />
+            <img id="intro_catch2" src="../img/intro_catch2.png" />
+            <p id="introstory_txt">
+              猫背でひょろひょろのマモちゃんに出会い、恋に落ちた。その時から、テルコの世界はマモちゃん一色に染まり始める。会社の電話はとらないのに、マモちゃんからの着信には秒速で対応、呼び出されると残業もせずにさっさと退社。友達の助言も聞き流し、どこにいようと電話一本で駆け付け（あくまでさりげなく）、平日デートに誘われれば余裕で会社をぶっちぎり、クビ寸前。大好きだし、超幸せ。マモちゃん優しいし。だけど。マモちゃんは、テルコのことが好きじゃない・・・。
+            </p>
+            <img id="intro_p1" src="../img/intro_p1.jpeg" />
+          </div>
+        </section>
+      </div>
     </main>
   </body>
 </html>

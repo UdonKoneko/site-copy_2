@@ -1,5 +1,6 @@
 body {
   margin: 0px;
+  line-height: 1.9em;
 }
 .popup {
   background-color: black;
@@ -37,183 +38,205 @@ body {
   z-index: 100;
 }
 main {
-  max-width: 980px;
-  margin: 0 auto;
-  background-image: url(../img/home_bg.gif);
-  #ul-header {
-    max-width: 490px;
-    cursor: pointer;
-    padding-left: 0;
-    margin-top: 0;
-    li {
-      display: inline-block;
-      vertical-align: top;
-    }
-    a {
-      background: url(../img/gnav1_2.png) no-repeat left top;
-      display: block;
-      height: 75px;
-      text-indent: -9999px;
-      position: relative;
-      outline: none;
-    }
-    // ニュース
-    li:nth-child(1) {
-      a {
-        width: 75px;
-        background-position: -10px top;
-      }
-    }
-    // 上映劇場
-    li:nth-child(2) {
-      a {
-        width: 75px;
-        background-position: -96px top;
-      }
-    }
-    // 予告編
-    li:nth-child(3) {
-      a {
-        width: 65px;
-        background-position: -180px top;
-      }
-    }
-    // イントロ&ストーリー
-    li:nth-child(4) {
-      a {
-        width: 80px;
-        background-position: -265px top;
-      }
-    }
-    // キャスト
-    li:nth-child(5) {
-      a {
-        width: 75px;
-        background-position: -350px top;
-      }
-    }
-    // 原作&監督 主題歌
-    li:nth-child(6) {
-      a {
-        width: 75px;
-        background-position: -435px top;
-      }
-    }
-  }
-  #wrap_sns-icons {
-    display: flex;
-    justify-content: flex-end;
-    #sns-icons {
+  #main_inner {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background: url(../img/home_bg.gif) no-repeat center top;
+    #ul-header {
+      max-width: 490px;
       cursor: pointer;
-      max-width: 180px;
-      margin: 0;
+      padding-left: 0;
+      margin-top: 0;
       li {
         display: inline-block;
         vertical-align: top;
-        width: 50px;
+      }
+      a {
+        background: url(../img/gnav1_2.png) no-repeat left top;
+        display: block;
+        height: 75px;
+        text-indent: -9999px;
+        position: relative;
+        outline: none;
+      }
+      // ニュース
+      li:nth-child(1) {
         a {
-          background: url(../img/snsbtns.png) no-repeat left;
-          display: block;
-          height: 50px;
-          text-indent: -9999px;
+          width: 75px;
+          background-position: -10px top;
         }
       }
-      // Twitter
+      // 上映劇場
       li:nth-child(2) {
         a {
-          background-position: -45px;
+          width: 75px;
+          background-position: -96px top;
         }
       }
-      // Instagram
+      // 予告編
       li:nth-child(3) {
         a {
-          background-position: -90px;
+          width: 65px;
+          background-position: -180px top;
+        }
+      }
+      // イントロ&ストーリー
+      li:nth-child(4) {
+        a {
+          width: 80px;
+          background-position: -265px top;
+        }
+      }
+      // キャスト
+      li:nth-child(5) {
+        a {
+          width: 75px;
+          background-position: -350px top;
+        }
+      }
+      // 原作&監督 主題歌
+      li:nth-child(6) {
+        a {
+          width: 75px;
+          background-position: -435px top;
         }
       }
     }
-  }
-  #main-contents {
-    display: flex;
-    #top-left-contents {
-      #wrap_li {
-        display: flex;
-        align-items: flex-start;
-        margin-top: 10px;
-        #li_towor {
-          border: solid 1px #ddd1b7;
-          font-size: 12px;
-          max-width: 248px;
-          margin-right: 10px;
-          p {
-            line-height: 1.3em;
-            margin: 5px;
-          }
-        }
+    #wrap_sns-icons {
+      display: flex;
+      justify-content: flex-end;
+      #sns-icons {
+        cursor: pointer;
+        max-width: 180px;
+        margin: 0;
         li {
-          list-style: none;
-          #img_bnr {
-            &-towor {
-              width: 92px;
-              height: 24px;
-              padding: 5px 70px 0 70px;
-            }
-            &-filmarks {
-              width: 212px;
-              height: 86px;
-            }
+          display: inline-block;
+          vertical-align: top;
+          width: 50px;
+          a {
+            background: url(../img/snsbtns.png) no-repeat left;
+            display: block;
+            height: 50px;
+            text-indent: -9999px;
           }
         }
-      }
-      #img_baliafree {
-        width: 400px;
-        height: 29px;
-      }
-      h1 {
-        margin: 0;
-        position: absolute;
-        left: 0%;
-        top: 100px;
-        margin-left: 12%;
-        z-index: 1;
-        #img {
-          &_logo {
-            width: 600px;
-            height: 269px;
+        // Twitter
+        li:nth-child(2) {
+          a {
+            background-position: -45px;
           }
         }
-      }
-      #img {
-        &_koukai2 {
-          width: 400;
-          height: 34px;
-        }
-        &_bnr_bddvd {
-          width: 470;
-          height: 82px;
-        }
-        &_home_thumbs {
-          width: 470;
-          height: 104px;
-        }
-      }
-      #wrap_img-banners {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 470px;
-        margin: 0;
-        margin: 230px 0;
-        &_content {
-          margin-top: 10px;
+        // Instagram
+        li:nth-child(3) {
+          a {
+            background-position: -90px;
+          }
         }
       }
     }
-    #img_main2 {
-      width: 565px;
-      height: 780px;
-      position: absolute;
-      right: 50%;
-      left: 50%;
+    #main-contents {
+      display: flex;
+      #top-left-contents {
+        #wrap_li {
+          display: flex;
+          align-items: flex-start;
+          margin-top: 10px;
+          #li_towor {
+            border: solid 1px #ddd1b7;
+            font-size: 12px;
+            max-width: 248px;
+            margin-right: 10px;
+            p {
+              line-height: 1.3em;
+              margin: 5px;
+            }
+          }
+          li {
+            list-style: none;
+            #img_bnr {
+              &-towor {
+                width: 92px;
+                height: 24px;
+                padding: 5px 70px 0 70px;
+              }
+              &-filmarks {
+                width: 212px;
+                height: 86px;
+              }
+            }
+          }
+        }
+        #img_baliafree {
+          width: 400px;
+          height: 29px;
+        }
+        h1 {
+          margin: 0;
+          position: absolute;
+          left: 0%;
+          top: 100px;
+          margin-left: 12%;
+          z-index: 1;
+          #img {
+            &_logo {
+              width: 600px;
+              height: 269px;
+            }
+          }
+        }
+        #img {
+          &_koukai2 {
+            width: 400;
+            height: 34px;
+          }
+          &_bnr_bddvd {
+            width: 470;
+            height: 82px;
+          }
+          &_home_thumbs {
+            width: 470;
+            height: 104px;
+          }
+        }
+        #wrap_img-banners {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 470px;
+          margin: 0;
+          margin: 230px 0;
+          &_content {
+            margin-top: 10px;
+          }
+        }
+      }
+      #img_main2 {
+        width: 565px;
+        height: 780px;
+        position: absolute;
+        right: 50%;
+        left: 50%;
+      }
+    }
+    #introstory_inner {
+      // background: url(../img/intro_p1.jpeg) no-repeat right;
+      padding: 50px 0px 0px 50px;
+      #intro_catch2,
+      #introstory_txt {
+        margin-top: 40px;
+      }
+      #introstory_txt {
+        font-size: 14px;
+        width: 330px;
+      }
+      #intro_p1 {
+        position: absolute;
+        right: 50%;
+        left: 46%;
+        z-index: -1;
+        top: 1150px;
+      }
     }
   }
 }
