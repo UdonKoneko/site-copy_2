@@ -54,26 +54,55 @@ main {
   margin: 0 auto;
 }
 
-.ul-header {
+#ul-header {
   max-width: 490px;
   cursor: pointer;
+  padding-left: 0;
+  margin-top: 0;
 }
 
-.ul-header li {
+#ul-header li {
   display: inline-block;
   vertical-align: top;
 }
 
-.ul-header a {
-  text-decoration: none;
-  color: #333333;
-  font-family: "Century";
+#ul-header a {
   background: url(../img/gnav1_2.png) no-repeat left top;
+  display: block;
+  height: 75px;
+  text-indent: -9999px;
+  position: relative;
+  outline: none;
 }
 
-.ul-header a p {
-  margin: 0;
-  text-align: center;
+#ul-header li:nth-child(1) a {
+  width: 75px;
+  background-position: -10px top;
+}
+
+#ul-header li:nth-child(2) a {
+  width: 75px;
+  background-position: -96px top;
+}
+
+#ul-header li:nth-child(3) a {
+  width: 65px;
+  background-position: -180px top;
+}
+
+#ul-header li:nth-child(4) a {
+  width: 80px;
+  background-position: -265px top;
+}
+
+#ul-header li:nth-child(5) a {
+  width: 75px;
+  background-position: -350px top;
+}
+
+#ul-header li:nth-child(6) a {
+  width: 75px;
+  background-position: -435px top;
 }
 
 #main-contents {
@@ -120,6 +149,9 @@ main {
 
 #main-contents #top-left-contents h1 {
   margin-bottom: 0;
+  position: absolute;
+  left: 0%;
+  margin-left: 12%;
 }
 
 #main-contents #top-left-contents h1 #img_logo {
@@ -148,6 +180,7 @@ main {
   align-items: center;
   width: 470px;
   margin: 0;
+  margin: 300px 0;
 }
 
 #main-contents #top-left-contents #wrap_img-banners_content {
