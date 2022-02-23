@@ -34,16 +34,12 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   cursor: pointer;
-}
-#content {
-  z-index: 2;
-  width: 50%;
-  padding: 1em;
-  background: #fff;
+  z-index: 100;
 }
 main {
   max-width: 980px;
   margin: 0 auto;
+  background-image: url(../img/home_bg.gif);
   #ul-header {
     max-width: 490px;
     cursor: pointer;
@@ -176,7 +172,9 @@ main {
         margin: 0;
         position: absolute;
         left: 0%;
+        top: 100px;
         margin-left: 12%;
+        z-index: 1;
         #img {
           &_logo {
             width: 600px;
@@ -204,7 +202,7 @@ main {
         align-items: center;
         width: 470px;
         margin: 0;
-        margin: 300px 0;
+        margin: 230px 0;
         &_content {
           margin-top: 10px;
         }
@@ -213,7 +211,6 @@ main {
     #img_main2 {
       width: 565px;
       height: 780px;
-      z-index: -1;
       position: absolute;
       right: 50%;
       left: 50%;
@@ -226,7 +223,7 @@ main {
   font-weight: bold;
 }
 .p_small {
-  font-size: small;
+  font-size: 10px;
 }
 .color1 {
   color: gray;
