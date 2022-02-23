@@ -1,6 +1,7 @@
 body {
   margin: 0px;
-  line-height: 1.9em;
+  line-height: 1.7em;
+  letter-spacing: 0.6pt;
 }
 
 .popup {
@@ -231,13 +232,31 @@ main #main_inner #introstory_inner {
 }
 
 main #main_inner #introstory_inner #intro_catch2,
-main #main_inner #introstory_inner #introstory_txt {
+main #main_inner #introstory_inner .introstory_txt {
   margin-top: 40px;
 }
 
-main #main_inner #introstory_inner #introstory_txt {
+main #main_inner #introstory_inner #intro_catch1 {
+  width: 683px;
+  height: 91px;
+}
+
+main #main_inner #introstory_inner #intro_catch2 {
+  width: 347px;
+  height: 183px;
+}
+
+main #main_inner #introstory_inner .introstory_txt {
   font-size: 14px;
-  width: 330px;
+}
+
+main #main_inner #introstory_inner #introstory_txt_1 {
+  width: 350px;
+}
+
+main #main_inner #introstory_inner #introstory_txt_2 {
+  width: 280px;
+  margin-top: 60px;
 }
 
 main #main_inner #introstory_inner #intro_p1 {
@@ -246,6 +265,18 @@ main #main_inner #introstory_inner #intro_p1 {
   left: 46%;
   z-index: -1;
   top: 1150px;
+  width: 604px;
+  height: 750px;
+}
+
+main #main_inner #introstory_inner #intro_photos {
+  position: absolute;
+  right: 50%;
+  left: 46%;
+  z-index: -1;
+  top: 1910px;
+  width: 604px;
+  height: auto;
 }
 
 .p_bold {

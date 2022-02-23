@@ -1,6 +1,7 @@
 body {
   margin: 0px;
-  line-height: 1.9em;
+  line-height: 1.7em;
+  letter-spacing: 0.6pt;
 }
 .popup {
   background-color: black;
@@ -223,12 +224,26 @@ main {
       // background: url(../img/intro_p1.jpeg) no-repeat right;
       padding: 50px 0px 0px 50px;
       #intro_catch2,
-      #introstory_txt {
+      .introstory_txt {
         margin-top: 40px;
       }
-      #introstory_txt {
+      #intro_catch1 {
+        width: 683px;
+        height: 91px;
+      }
+      #intro_catch2 {
+        width: 347px;
+        height: 183px;
+      }
+      .introstory_txt {
         font-size: 14px;
-        width: 330px;
+      }
+      #introstory_txt_1 {
+        width: 350px;
+      }
+      #introstory_txt_2 {
+        width: 280px;
+        margin-top: 60px;
       }
       #intro_p1 {
         position: absolute;
@@ -236,6 +251,17 @@ main {
         left: 46%;
         z-index: -1;
         top: 1150px;
+        width: 604px;
+        height: 750px;
+      }
+      #intro_photos {
+        position: absolute;
+        right: 50%;
+        left: 46%;
+        z-index: -1;
+        top: 1910px;
+        width: 604px;
+        height: auto;
       }
     }
   }
