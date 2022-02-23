@@ -62,36 +62,42 @@ main {
     position: relative;
     outline: none;
   }
+  // ニュース
   li:nth-child(1) {
     a {
       width: 75px;
       background-position: -10px top;
     }
   }
+  // 上映劇場
   li:nth-child(2) {
     a {
       width: 75px;
       background-position: -96px top;
     }
   }
+  // 予告編
   li:nth-child(3) {
     a {
       width: 65px;
       background-position: -180px top;
     }
   }
+  // イントロ&ストーリー
   li:nth-child(4) {
     a {
       width: 80px;
       background-position: -265px top;
     }
   }
+  // キャスト
   li:nth-child(5) {
     a {
       width: 75px;
       background-position: -350px top;
     }
   }
+  // 原作&監督 主題歌
   li:nth-child(6) {
     a {
       width: 75px;
