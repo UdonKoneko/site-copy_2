@@ -54,19 +54,19 @@ main {
   margin: 0 auto;
 }
 
-#ul-header {
+main #ul-header {
   max-width: 490px;
   cursor: pointer;
   padding-left: 0;
   margin-top: 0;
 }
 
-#ul-header li {
+main #ul-header li {
   display: inline-block;
   vertical-align: top;
 }
 
-#ul-header a {
+main #ul-header a {
   background: url(../img/gnav1_2.png) no-repeat left top;
   display: block;
   height: 75px;
@@ -75,106 +75,138 @@ main {
   outline: none;
 }
 
-#ul-header li:nth-child(1) a {
+main #ul-header li:nth-child(1) a {
   width: 75px;
   background-position: -10px top;
 }
 
-#ul-header li:nth-child(2) a {
+main #ul-header li:nth-child(2) a {
   width: 75px;
   background-position: -96px top;
 }
 
-#ul-header li:nth-child(3) a {
+main #ul-header li:nth-child(3) a {
   width: 65px;
   background-position: -180px top;
 }
 
-#ul-header li:nth-child(4) a {
+main #ul-header li:nth-child(4) a {
   width: 80px;
   background-position: -265px top;
 }
 
-#ul-header li:nth-child(5) a {
+main #ul-header li:nth-child(5) a {
   width: 75px;
   background-position: -350px top;
 }
 
-#ul-header li:nth-child(6) a {
+main #ul-header li:nth-child(6) a {
   width: 75px;
   background-position: -435px top;
 }
 
-#main-contents {
+main #wrap_sns-icons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+main #wrap_sns-icons #sns-icons {
+  cursor: pointer;
+  max-width: 180px;
+  margin: 0;
+}
+
+main #wrap_sns-icons #sns-icons li {
+  display: inline-block;
+  vertical-align: top;
+  width: 50px;
+}
+
+main #wrap_sns-icons #sns-icons li a {
+  background: url(../img/snsbtns.png) no-repeat left;
+  display: block;
+  height: 50px;
+  text-indent: -9999px;
+}
+
+main #wrap_sns-icons #sns-icons li:nth-child(2) a {
+  background-position: -45px;
+}
+
+main #wrap_sns-icons #sns-icons li:nth-child(3) a {
+  background-position: -90px;
+}
+
+main #main-contents {
   display: flex;
 }
 
-#main-contents #top-left-contents #wrap_li {
+main #main-contents #top-left-contents #wrap_li {
   display: flex;
   align-items: flex-start;
   margin-top: 10px;
 }
 
-#main-contents #top-left-contents #wrap_li #li_towor {
+main #main-contents #top-left-contents #wrap_li #li_towor {
   border: solid 1px #ddd1b7;
   font-size: 12px;
   max-width: 248px;
   margin-right: 10px;
 }
 
-#main-contents #top-left-contents #wrap_li #li_towor p {
+main #main-contents #top-left-contents #wrap_li #li_towor p {
   line-height: 1.3em;
   margin: 5px;
 }
 
-#main-contents #top-left-contents #wrap_li li {
+main #main-contents #top-left-contents #wrap_li li {
   list-style: none;
 }
 
-#main-contents #top-left-contents #wrap_li li #img_bnr-towor {
+main #main-contents #top-left-contents #wrap_li li #img_bnr-towor {
   width: 92px;
   height: 24px;
   padding: 5px 70px 0 70px;
 }
 
-#main-contents #top-left-contents #wrap_li li #img_bnr-filmarks {
+main #main-contents #top-left-contents #wrap_li li #img_bnr-filmarks {
   width: 212px;
   height: 86px;
 }
 
-#main-contents #top-left-contents #img_baliafree {
+main #main-contents #top-left-contents #img_baliafree {
   width: 400px;
   height: 29px;
 }
 
-#main-contents #top-left-contents h1 {
-  margin-bottom: 0;
+main #main-contents #top-left-contents h1 {
+  margin: 0;
   position: absolute;
   left: 0%;
   margin-left: 12%;
 }
 
-#main-contents #top-left-contents h1 #img_logo {
+main #main-contents #top-left-contents h1 #img_logo {
   width: 600px;
   height: 269px;
 }
 
-#main-contents #top-left-contents #img_koukai2 {
+main #main-contents #top-left-contents #img_koukai2 {
   width: 400;
   height: 34px;
 }
 
-#main-contents #top-left-contents #img_bnr_bddvd {
+main #main-contents #top-left-contents #img_bnr_bddvd {
   width: 470;
   height: 82px;
 }
 
-#main-contents #top-left-contents #img_home_thumbs {
+main #main-contents #top-left-contents #img_home_thumbs {
   width: 470;
   height: 104px;
 }
 
-#main-contents #top-left-contents #wrap_img-banners {
+main #main-contents #top-left-contents #wrap_img-banners {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -183,11 +215,11 @@ main {
   margin: 300px 0;
 }
 
-#main-contents #top-left-contents #wrap_img-banners_content {
+main #main-contents #top-left-contents #wrap_img-banners_content {
   margin-top: 10px;
 }
 
-#main-contents #img_main2 {
+main #main-contents #img_main2 {
   width: 565px;
   height: 780px;
   z-index: -1;
