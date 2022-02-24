@@ -138,6 +138,7 @@ main {
     }
     #main-contents {
       display: flex;
+      height: 950px;
       #top-left-contents {
         #wrap_li {
           display: flex;
@@ -250,7 +251,7 @@ main {
         right: 50%;
         left: 46%;
         z-index: -1;
-        top: 1150px;
+        top: 1050px;
         width: 604px;
         height: 750px;
       }
@@ -259,7 +260,7 @@ main {
         right: 50%;
         left: 46%;
         z-index: -1;
-        top: 1910px;
+        top: 1810px;
         width: 604px;
         height: auto;
       }

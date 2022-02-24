@@ -8,14 +8,6 @@
       src="https://kit.fontawesome.com/4f8e5954ee.js"
       crossorigin="anonymous"
     ></script>
-    <script
-      crossorigin
-      src="https://unpkg.com/react@17/umd/react.development.js"
-    ></script>
-    <script
-      crossorigin
-      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
-    ></script>
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     <link href="./index.min.css" rel="stylesheet" />
   </head>
@@ -125,26 +117,50 @@
           </div>
         </section>
         <section id="introstory">
-          <h2><img src="../img/title_introstory.png" /></h2>
+          <h2 class="scroll-reveal">
+            <img src="../img/title_introstory.png" />
+          </h2>
           <div id="introstory_inner">
             <section id="introstory_1">
-              <img id="intro_catch1" src="../img/intro_catch1.png" />
-              <img id="intro_catch2" src="../img/intro_catch2.png" />
-              <p id="introstory_txt_1" class="introstory_txt">
+              <img
+                id="intro_catch1"
+                class="scroll-reveal"
+                src="../img/intro_catch1.png"
+              />
+              <img
+                id="intro_catch2"
+                class="scroll-reveal"
+                src="../img/intro_catch2.png"
+              />
+              <p id="introstory_txt_1" class="introstory_txt scroll-reveal">
                 猫背でひょろひょろのマモちゃんに出会い、恋に落ちた。その時から、テルコの世界はマモちゃん一色に染まり始める。会社の電話はとらないのに、マモちゃんからの着信には秒速で対応、呼び出されると残業もせずにさっさと退社。友達の助言も聞き流し、どこにいようと電話一本で駆け付け（あくまでさりげなく）、平日デートに誘われれば余裕で会社をぶっちぎり、クビ寸前。大好きだし、超幸せ。マモちゃん優しいし。だけど。マモちゃんは、テルコのことが好きじゃない・・・。
               </p>
               <img id="intro_p1" src="../img/intro_p1.jpeg" />
             </section>
             <section id="introstory_2">
-              <p id="introstory_txt_2" class="introstory_txt">
+              <p id="introstory_txt_2" class="introstory_txt scroll-reveal">
                 角田光代のみずみずしくも濃密な片思い小説を、“正解のない恋の形”を模索し続ける恋愛映画の旗手、今泉力哉監督が見事に映画化。<br />テルコ、<br />マモちゃん、
                 <br />テルコの友達の葉子、<br />葉子を追いかけるナカハラ、<br />マモちゃんがあこがれるすみれ…<br />彼らの関係はあまりにもリアルで、<br />ヒリヒリして、恥ずかしくて、<br />でも、どうしようもなく好き…<br />この映画には、<br />恋のすべてが詰まっています。
               </p>
-              <img id="intro_photos" src="../img/intro_photos.png" />
+              <img
+                id="intro_photos"
+                class="scroll-reveal"
+                src="../img/intro_photos.png"
+              />
             </section>
           </div>
         </section>
       </div>
     </main>
+    <script
+      src="https://unpkg.com/react@17/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script type="text/javascript" src="./index.js"></script>
   </body>
 </html>

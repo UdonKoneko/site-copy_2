@@ -137,6 +137,7 @@ main #main_inner #wrap_sns-icons #sns-icons li:nth-child(3) a {
 
 main #main_inner #main-contents {
   display: flex;
+  height: 950px;
 }
 
 main #main_inner #main-contents #top-left-contents #wrap_li {
@@ -264,7 +265,7 @@ main #main_inner #introstory_inner #intro_p1 {
   right: 50%;
   left: 46%;
   z-index: -1;
-  top: 1150px;
+  top: 1050px;
   width: 604px;
   height: 750px;
 }
@@ -274,7 +275,7 @@ main #main_inner #introstory_inner #intro_photos {
   right: 50%;
   left: 46%;
   z-index: -1;
-  top: 1910px;
+  top: 1810px;
   width: 604px;
   height: auto;
 }
