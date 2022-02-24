@@ -10,51 +10,19 @@
     ></script>
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     <link href="./index.min.css" rel="stylesheet" />
+    <script
+      src="https://unpkg.com/react@17/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="./index.jsx" type="text/babel"></script>
   </head>
   <style></style>
   <body>
     <section id="modal-main"></section>
-    <script type="text/babel">
-      function Modal({ show, setShow }) {
-        const closeModal = () => {
-          setShow(false);
-        };
-        if (show) {
-          return (
-            <div id="overlay" onClick={closeModal}>
-              <div id="js-popup" class="popup">
-                <div id="js-close-btn" class="close-btn" onClick={closeModal}>
-                  <i class="fa-solid fa-xmark fa-fw fa-2x"></i>
-                </div>
-                <iframe
-                  class="iframe-1"
-                  src="https://www.youtube.com/embed/AYM45i2drCU?autoplay=1&mute=1"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
-              </div>
-            </div>
-          );
-        } else {
-          return null;
-        }
-      }
-      const { useState } = React;
-      function App() {
-        const [show, setShow] = useState(true);
-        const openModal = () => {
-          setShow(true);
-        };
-        return (
-          <div>
-            <Modal show={show} setShow={setShow} />
-          </div>
-        );
-      }
-      ReactDOM.render(<App />, document.getElementById("modal-main"));
-    </script>
     <main>
       <div id="main_inner">
         <section id="main-contents">
@@ -152,14 +120,6 @@
         </section>
       </div>
     </main>
-    <script
-      src="https://unpkg.com/react@17/umd/react.development.js"
-      crossorigin
-    ></script>
-    <script
-      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
-      crossorigin
-    ></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <script type="text/javascript" src="./index.js"></script>
   </body>
